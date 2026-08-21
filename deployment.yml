@@ -2,9 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nginx-deployment
-  namespace: k8s-demo
 spec:
-  replicas: 1
+  replicas: 4
   selector:
     matchLabels:
       app: nginx-app
